@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>582996395263-q8eha7lqluc05h4pmev3l8u0kq59c64i.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.582996395263-q8eha7lqluc05h4pmev3l8u0kq59c64i</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAIWmQLEdaf7jGQASghF62qXUzL3hJTxTQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>582996395263</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>jp.ne.sakura.tatsumi44.MultipleImagePicker</string>
+	<key>PROJECT_ID</key>
+	<string>multiplefileuploarder</string>
+	<key>STORAGE_BUCKET</key>
+	<string>multiplefileuploarder.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:582996395263:ios:c4643d75e50f072c</string>
+	<key>DATABASE_URL</key>
+	<string>https://multiplefileuploarder.firebaseio.com</string>
+</dict>
+</plist>
