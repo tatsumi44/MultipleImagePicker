@@ -21,7 +21,6 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate {
     
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -31,45 +30,27 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-       
-    }
+    
     @IBAction func taped(_ sender: Any) {
-        
         let pickerController = DKImagePickerController()
         pickerController.maxSelectableCount = 3
         pickerController.didSelectAssets = {(assets: [DKAsset]) in
-
-            // 選択された画像はassetsに入れて返却されますのでfetchして取り出すと
+            // 選択された画像はassetsに入れて返却されますのでfetchして取り出す
             for asset in assets {
                 asset.fetchFullScreenImage(true, completeBlock: { (image, info) in
-//                    self.selectImages = image
                     self.imageArray.append(image!)
-                    
-                    
                     print("これが\(String(describing: type(of: image!)))")
                 })
                 print(self.imageArray)
-                
                 print("ええで")
             }
             self.image1.image = self.imageArray[0]
             self.image2.image = self.imageArray[1]
             self.image3.image = self.imageArray[2]
-//            self.dismiss(animated: true, completion: nil)
         }
         present(pickerController, animated: true, completion: nil)
-        if imageArray.isEmpty == false{
-           
-           
-        }else{
-            print("b")
-        }
     }
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-      
-    }
+    
     
     @IBAction func send(_ sender: Any) {
         let storage = Storage.storage()
