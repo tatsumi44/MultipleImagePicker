@@ -44,9 +44,20 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate {
                 print(self.imageArray)
                 print("ええで")
             }
-            self.image1.image = self.imageArray[0]
-            self.image2.image = self.imageArray[1]
-            self.image3.image = self.imageArray[2]
+            print(self.imageArray.count)
+            switch self.imageArray.count {
+            case 1:
+                self.image1.image = self.imageArray[0]
+            case 2:
+                self.image1.image = self.imageArray[0]
+                self.image2.image = self.imageArray[1]
+            case 3:
+                self.image1.image = self.imageArray[0]
+                self.image2.image = self.imageArray[1]
+                self.image3.image = self.imageArray[2]
+            default:
+                return
+            }
         }
         present(pickerController, animated: true, completion: nil)
     }
